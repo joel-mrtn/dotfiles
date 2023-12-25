@@ -22,6 +22,7 @@ cursor:
     blinking: Always
 
 schemes:
+  # Tokyo Night (https://github.com/folke/tokyonight.nvim/tree/main)
   tokyo-night: &tokyo-night
     # Default colors
     primary:
