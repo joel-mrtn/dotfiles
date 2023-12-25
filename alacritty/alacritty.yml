@@ -1,0 +1,22 @@
+live_config_reload: true
+
+window:
+  dynamic_padding: true
+  opacity: 0.9
+  blur: true
+
+  padding:
+    x: 3
+    y: 3
+
+font:
+  size: 14.0
+
+  normal:
+    family: JetBrainsMonoNL Nerd Font
+    style: Regular
+
+cursor:
+  style:
+    shape: Underline
+    blinking: Always

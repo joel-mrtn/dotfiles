@@ -1,0 +1,45 @@
+# load scripting addition
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+# general
+yabai -m config layout bsp
+yabai -m config auto_balance on
+yabai -m config window_placement seccond_child
+
+# window
+yabai -m config window_shadow float
+yabai -m config window_topmost off
+yabai -m config window_opacity off
+
+yabai -m config window_border off
+yabai -m config window_border_blur on
+yabai -m config window_border_hidpi on
+
+# padding
+yabai -m config top_padding 12
+yabai -m config bottom_padding 12
+yabai -m config left_padding 12
+yabai -m config right_padding 12
+yabai -m config window_gap 6
+
+# mouse
+yabai -m config mouse_modifier fn
+yabai -m config mouse_action1 move
+yabai -m config mouse_action2 resize
+yabai -m config mouse_drop_action swap
+
+# disable specific apps
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^Hidden Bar$" manage=off
+yabai -m rule --add app="^Karabiner-Elements$" manage=off
+yabai -m rule --add app="^Keyboard Setup Assistant" manage=off
+yabai -m rule --add app="^Raycast$" manage=off
+yabai -m rule --add app="^Safari$" title="(General|Tabs|Autofill|Passwords|Search|Security|Privacy|Websites|Profiles|Extensions|Advanced|Developer|Feature Flags)" manage=off
+yabai -m rule --add app="^Script Console$" manage=off
+yabai -m rule --add app="^Spaceman$" manage=off
+yabai -m rule --add app="^Stats$" manage=off
+yabai -m rule --add app="^Steam$" manage=off
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^IINA" manage=off
