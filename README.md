@@ -1,4 +1,4 @@
-# dotfiles-macos
+# Dotfiles
 
 ## Symbolic links
 
