@@ -4,22 +4,22 @@ fn - k : yabai -m window --focus north
 fn - h : yabai -m window --focus west
 fn - l : yabai -m window --focus east
 
-# swap window
+# swap managed window
 fn + alt - j : yabai -m window --swap south
 fn + alt - k : yabai -m window --swap north
 fn + alt - h : yabai -m window --swap west
 fn + alt - l : yabai -m window --swap east
 
-# move window
+# move managed window
 fn + cmd - j : yabai -m window --warp south
 fn + cmd - k : yabai -m window --warp north
 fn + cmd - h : yabai -m window --warp west
 fn + cmd - l : yabai -m window --warp east
 
 # toggle window tiling
-fn + cmd - e : yabai -m window --toggle float
+fn + cmd - e : yabai -m window --toggle float --grid 14:14:2:2:10:10
 
-# toggle window fullscreen
+# toggle window zoom
 fn + cmd - d : yabai -m window --toggle zoom-parent
 fn + cmd - f : yabai -m window --toggle zoom-fullscreen
 
@@ -33,6 +33,7 @@ fn - 6 : yabai -m space --focus 6
 fn - 7 : yabai -m space --focus 7
 fn - 8 : yabai -m space --focus 8
 fn - 9 : yabai -m space --focus 9
+fn - r : yabai -m space --focus recent
 
 # move window to space
 fn + cmd - 1 : yabai -m window --space 1; yabai -m space --focus 1
@@ -45,14 +46,8 @@ fn + cmd - 7 : yabai -m window --space 7; yabai -m space --focus 7
 fn + cmd - 8 : yabai -m window --space 8; yabai -m space --focus 8
 fn + cmd - 9 : yabai -m window --space 9; yabai -m space --focus 9
 
-# page through spaces 
-# fn - left : yabai -m space --focus prev
-# fn - right : yabai -m space --focus next
-# fn + cmd - left : yabai -m window --space prev; yabai -m space --focus prev
-# fn + cmd - right : yabai -m window --space next; yabai -m space --focus next
-
-# reset current space
-fn - 0 : yabai -m space --balance
+# balance size of windows
+fn + cmd - 0 : yabai -m space --balance
 
 # create and destroy spaces
 fn + cmd - n : yabai -m space --create
@@ -60,7 +55,3 @@ fn + cmd - m : yabai -m space --destroy
 
 # rotate windows
 fn + cmd - r : yabai -m space --rotate 90
-
-# restart yabai
-fn + alt + cmd - y : yabai --stop-service;\
-                     yabai --start-service
