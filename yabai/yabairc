@@ -7,12 +7,11 @@ sudo yabai --load-sa
 # global settings
 yabai -m config                                 \
     layout                       bsp            \
-    auto_balance                 on             \
+    auto_balance                 off            \
     window_placement             seccond_child  \
     window_shadow                float          \
     window_topmost               off            \
     window_opacity               off            \
-    window_border                off            \
     top_padding                  12             \
     bottom_padding               12             \
     left_padding                 12             \
