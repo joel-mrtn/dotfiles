@@ -33,10 +33,3 @@ opt.isfname:append("@-@")
 opt.wrap = false
 opt.termguicolors = true
 opt.updatetime = 50
-
--- set cursor to underline when exiting
-vim.api.nvim_create_autocmd("ExitPre", {
-	group = vim.api.nvim_create_augroup("Exit", { clear = true }),
-	command = "set guicursor=a:hor10",
-	desc = "Set cursor to underline when leaving."
-})
