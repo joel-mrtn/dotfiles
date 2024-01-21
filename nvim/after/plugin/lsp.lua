@@ -8,7 +8,7 @@ require('neodev').setup()
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-    ensure_installed = {'lua_ls', 'pyright', 'rust_analyzer', 'tsserver'},
+    ensure_installed = {'lua_ls', 'pyright', 'rust_analyzer', 'tsserver', 'gopls', 'clangd'},
     handlers = {
         lsp.default_setup,
     },
