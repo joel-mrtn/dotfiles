@@ -16,6 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
     -- color theme
     'folke/tokyonight.nvim',
+    'rebelot/kanagawa.nvim',
     -- statusline
     'nvim-lualine/lualine.nvim',
     -- undo tree
