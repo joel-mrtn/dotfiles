@@ -1,3 +1,15 @@
 [user]
 	name = Joel Martin
 	email = 64128660+joel-mrtn@users.noreply.github.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBYy0zJTLba/cY2BVsIH53v0wreh8ZHnJzOxVycek+Vm
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
