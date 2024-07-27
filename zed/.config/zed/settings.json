@@ -1,0 +1,34 @@
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+{
+  "telemetry": {
+    "diagnostics": true
+  },
+  "base_keymap": "JetBrains",
+  "theme": "Tokyo Night",
+  "ui_font_size": 15,
+  "ui_font_family": "JetBrainsMonoNL Nerd Font Mono",
+  "buffer_font_size": 15,
+  "buffer_font_family": "JetBrainsMonoNL Nerd Font Mono",
+  "vim_mode": true,
+  "relative_line_numbers": true,
+  "format_on_save": "off",
+  "terminal": {
+    "font_size": 15,
+    "font_family": "JetBrainsMonoNL Nerd Font Mono",
+    "detect_venv": {
+      "on": {
+        "activate_script": "fish"
+      }
+    }
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "chat_panel": {
+    "button": false
+  },
+  "features": {
+    "copilot": false
+  }
+}
